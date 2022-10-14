@@ -1,0 +1,26 @@
+max-hunters: "infinity" # change it from 1 to 10000 or set 'infinity'
+max-runners: "infinity" # change it from 1 to 10000 or set 'infinity'
+max-spectators: "infinity" # change it from 1 to 10000 or set 'infinity'
+max-server-players: server.MaxPlayers # set "server.MaxPlayers" to get from server, else set a number
+
+# %USERNAME% → Joined player username
+# %ID% → Join ID ( #1, #2, #3 )
+# Use &{code} to make your message colorable
+Join-Message: "&6%USERNAME%&a joined the manhunt!"
+Quit-Message: "&6%USERNAME%&c left the manhunt!"
+Reconnect-Message: "&6%USERNAME%&a reconnected!"
+Disconnect-Message: "&6%USERNAME%&c disconnected!"
+
+#costume options!
+# true = ON | false = OFF
+colorable-chat: true
+smelter-pickaxe: false
+tracking-compass: true
+chat-enabled: true
+keep-inventory-on-dead: false
+show-players-hp-on-tab-and-screen: false
+give-wooden-sword-to-hunter: false
+
+#players max health (1 = 1/2 ( 0.5 ) health)
+max-hunters-hp: 20
+max-runners-hp: 20

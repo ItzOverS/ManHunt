@@ -1,0 +1,21 @@
+Flight:
+- Check player is falling?
+- Check block under the player ( with Player:Location.Y - 1 )
+- Check player is jumping?
+- Check player's allow flight access given?
+- Check player is flying?
+- Check for player's game mode
+
+NoFall:
+- Check for falling
+- Check fall distance
+- Check for boots ( armor )
+
+Jesus:
+- Check block under the player is water or lava?
+- Check player is jumping?
+
+Speed-Hack/TP:
+- Check player effects ( Speed )
+- Check player distance to his/her last location ( distance > max_player_speed (without potion effects))
+

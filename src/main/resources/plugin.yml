@@ -1,0 +1,54 @@
+name: ManHunt
+version: '${project.version}'
+main: me.overlight.ManHunt
+api-version: 1.16
+authors: [ _OverLight_ ]
+description: Create a simulated man hunt
+website: http://www.daneshian.ir/
+depend: [ProtocolLib]
+softdepend: [ClearLagg]
+prefix: "ManHunt++"
+commands:
+  ManHunt:
+    description: Control ManHunt plugin
+    aliases:
+      - ManHunt
+      - MH
+      - ManHuntPlusPlus
+      - MHPP
+    permission: manhunt.*
+  Track:
+    description: Compass target to track speed runners
+    aliases:
+      - track
+      - target
+    permission: manhunt.track
+  TPM:
+    description: Teleport spectators to other players
+    aliases:
+      - TP
+      - tpm
+    permission: manhunt.tp
+  Kills:
+    description: Show runners kills
+    aliases:
+      - kills
+    permission: manhunt.kills
+  Vote:
+    description: vote for your rank
+    aliases:
+      - vote
+    permission: manhunt.votes
+permissions:
+  manhunt.*:
+    description: Use manhunt plugin
+    default: true
+  manhunt.track:
+    description: Start manhunt
+    default: true
+  manhunt.kills:
+    description: Show kills to runner
+    default: true
+  manhunt.votes:
+    description: Vote for your rank
+    default: true

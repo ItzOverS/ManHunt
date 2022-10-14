@@ -1,0 +1,87 @@
+Name: ManHunt++ v8.0.0
+Version: 1.16.5
+
+Options:
+✅ flight allowed before man hunt started
+✅ fast pickup when break a block
+✅ fast pickup xp when break a block
+✅ public and private chat
+✅ help command
+✅ target compass ( only for hunters & guardians , other roles can't use it )
+✅ when a hunter damage a speed runner , show speed runner’s hp to hunter ( in config.yml )
+✅ when speed runner died , don't respawn
+✅ show kills of your self ( only for runners )
+✅ costume join, quit and kick message ( in config.yml )
+✅ allow spectators to teleport other players
+✅ have permission for all manhunt sub commands
+✅ see all data of a command ( permission ID, name, usage and ... )
+✅ if one player sleep the time will set to day or night
+✅ set spawn location for public players, hunters and speed runners
+✅ deny all accesses to world options before game started
+✅ show player's roles in tab and chat ( in config.yml health show )
+✅ when player disconnect can reconnect to game
+✅ use GUI to add and remove : hunters, runners, spectators
+✅ show player's health in tab
+✅ hunters 10 seconds cool down to start hunting
+✅ player unlock recipe & achievement take 2 xp
+✅ show sub commands
+✅ for default hunter's compass target nearest runner
+➖ when bow shoot the arrow can't pickup again ( one use per arrow ) (REMOVED)
+✅ set spawn radians for hunters and runners
+❌ create a costume lobby:
+ - ❌ show some scoreboard ( score, current rank, play time )
+ - ❌ show some npc ( world teleport, stats and ... )
+ - ❌ have parkour
+✅ show how many time man hunt started
+✅ "rank reload" and "manhunt restart" commands
+✅ colorable-chat, smelter-pickaxe, item-converting and ... ( in config.yml )
+✅ mute players
+✅ locate my team mates
+✅ some challenges for more fun:
+ - Hunters are strong as Tank ( full diamond armors for hunters )
+ - Runners can't dead on damage ( w/hen runner kill a hunter give him some hp )
+ - I'm not a human, I'm a monster ( allow runner to change they skin and name like hunters )
+ - I'm not a human, I'm a mob ( when man hunt start all players with any rank take an ability of a mob! for ex: EnderMan > Ender pearl : Zombie > multi damage : Skeleton > Bow )
+ - I'm not a runner, I'm the EnderDragon ( when a hunter killed by runner, give runner an effect )
+✅ save default configs
+✅ have team mates
+✅ append permission to players
+
+files:
+ * config.yml:
+  - ✅ costume color in chat
+  - ✅ smelting pickaxe
+  - ✅ tracking compass summon
+  - ✅ Join, Quit, Reconnect & DisConnect message
+  - ✅ max range for hunter, runner, spectator
+  - ✅ enable & disable chat
+
+bug-fix:
+✅ player disconnect from server can reconnect without plugin reload
+✅ when hunter died, recovery his/her compass
+✅ when player disconnect and reconnect, player's rank nuke every 2 seconds
+✅ when player reconnect to the server, he/she can fly!
+✅ target compass tracking
+✅ some blocks not pickup when break
+✅ denied fall damage after game start
+✅ sub commands don't work correctly
+✅ when inventory is full, item remove when break its block
+✅ not reload timer when game stopped
+✅ some tab completer of commands have bugged and don't show the correct option
+✅ add more than one player (InventorySelectorBug) ( with same name ) to lists ( hunter, runner, spectator and ... )
+✅ on plugin reload some rules not change ( GameRule.FALL_DAMAGE, ALLOW_FLIGHT and ... )
+✅ if the player dead it doesn't change his/her gameMode to survival ( from spectator )
+✅ when game start player's hp not fit!
+ and 42 more...
+
+ranks:
+- Hunter: The hunters will hunt speed runners
+- Runner: The speed runners to kill the dragon in the fastest time
+- Spectator: The spectators will spectate the game
+- Spammer: The spammer have 5 magical spawn eggs and can spawn them to kill runners or hunters
+- Guardian: The guardian can protect a player every 3 minutes for 30 seconds
+
+commands:
+/manhunt {role} {action} {player}
+/manhunt teams {action} {team} | {player.action} {player}
+/track {player.role.runner}
